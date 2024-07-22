@@ -5,5 +5,13 @@
     "env": {
       "email": "dd29042004@gmail.com",
       "password": "TestPassword"
+    },
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "reportDir": "mochawesome-report",
+      "overwrite": false,
+      "html": true,
+      "json": true
     }
   }
+    
