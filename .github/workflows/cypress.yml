@@ -22,15 +22,15 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: cd cypress && npm install
+        run: cd HW3 && npm install
 
       - name: Run Cypress tests with Mochawesome reporter
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-        run: cd cypress && npm run report -- --record --key $CYPRESS_RECORD_KEY
+        run: cd HW3 && npm run report -- --record --key $CYPRESS_RECORD_KEY
 
       - name: Upload Mochawesome Report
         uses: actions/upload-artifact@v2
         with:
           name: mochawesome-report
-          path: cypress/mochawesome-report/*.html
+          path: HW3/mochawesome-report/*.html
