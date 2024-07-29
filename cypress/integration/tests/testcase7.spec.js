@@ -12,7 +12,7 @@ describe('Comment Tests', () => {
   it('Verify posting comment', function () {
     loginPage.visit();
     loginPage.login(this.users.validUser.email, this.users.validUser.password);
-    cy.get('a.nav-link.active').contains('Your Feed').should('be.visible').then((element) => {
+    cy.contains('a.nav-link.active', 'Your Feed').should('be.visible').then((element) => {
       expect(element).to.be.visible;
     });
     homePage.clickGlobalFeed();
