@@ -2,18 +2,18 @@ class NewArticlePage {
     visit() {
         cy.visit('/editor');
     }
-    clickNewArticle(){
+    clickNewArticle() {
         cy.get('a.nav-link[href="/editor"]').click();
     }
-  
+
     fillTitle(title) {
-      cy.get('[name="articleTitle"]').type(title);
+        cy.get('[name="articleTitle"]').type(title);
     }
 
     fillArticleAbout(description) {
         cy.get('[name="description"]').type(description);
     }
-    
+
     fillArticleBody(body) {
         cy.get('[name="body"]').type(body);
     }
@@ -23,10 +23,9 @@ class NewArticlePage {
     }
 
     clickPublishArticle() {
-      cy.get('[class="btn btn-lg pull-xs-right btn-primary"]').click();
+        cy.get('[class="btn btn-lg pull-xs-right btn-primary"]').click();
     }
-   
-  }
-  
-  export const newArticlePage = new NewArticlePage();
-  
+
+}
+
+export const newArticlePage = new NewArticlePage();

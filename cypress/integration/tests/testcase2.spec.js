@@ -4,6 +4,8 @@ describe('Navigation Tests', () => {
   it('Verify clicking "Home" link redirects to homepage', () => {
     cy.visit('/login');
     homePage.clickHomeLink();
-    cy.url().should('eq', Cypress.config().baseUrl + '/');
+    cy.url().then((url) => {
+      expect(url).to.equal(Cypress.config().baseUrl + '/');
+    });
   });
 });

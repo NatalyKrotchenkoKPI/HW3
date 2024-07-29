@@ -1,6 +1,6 @@
 {
-    "validUser": {
-      "email": "dd29042004@gmail.com",
-      "password": "TestPassword"
-    }
+  "validUser": {
+    "email": "dd29042004@gmail.com",
+    "password": "TestPassword"
   }
+}

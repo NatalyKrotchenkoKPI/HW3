@@ -1,0 +1,9 @@
+# Cypress
+cypress/screenshots/
+cypress/downloads/
+
+# GitHub workflows
+.github/workflows/
+
+# Logs
+*.log
